@@ -1,0 +1,29 @@
+@use "@enveritas/design-tokens" as eds;
+
+.app {
+  font-family: eds.$typography-body-sans-3-font-family;
+  font-size: eds.$typography-body-sans-3-font-size;
+}
+
+h1 {
+  font-size: eds.$typography-heading-sans-1-font-family;
+  font-size: eds.$typography-heading-sans-1-font-size;
+  margin: .25em 0;
+}
+
+h2 {
+  font-size: eds.$typography-heading-sans-2-font-family;
+  font-size: eds.$typography-heading-sans-2-font-size;
+  margin: .25em 0;
+}
+
+h3 {
+  font-size: eds.$typography-heading-sans-3-font-family;
+  font-size: eds.$typography-heading-sans-3-font-size;
+  margin: .25em 0;
+}
+
+p {
+  margin: .25em 0;
+  font-size: eds.$typography-body-sans-2-font-size
+}

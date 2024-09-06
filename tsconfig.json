@@ -1,0 +1,13 @@
+{
+  "include": ["**/*.tsx",
+    "tests/setup.js",
+  ],
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "types": ["vite-plugin-svgr/client"]
+  }
+}
