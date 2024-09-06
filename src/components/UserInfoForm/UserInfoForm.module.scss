@@ -1,0 +1,69 @@
+@use "@enveritas/design-tokens" as eds;
+
+form {
+  background-color: eds.$color-bg-accent-regular;
+  border-radius: eds.$border-radius-2;
+  border: 2px solid eds.$color-border-accent-regular;
+  display: flex;
+  flex-direction: column;
+  gap: eds.$spacing-2;
+  padding: eds.$spacing-5;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    font-size: eds.$font-size-2;
+  }
+}
+
+button {
+  width: fit-content;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: eds.$button-border-radius;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: eds.$button-color-background-primary-default;
+  border: 1px solid eds.$button-color-border-primary;
+  color: eds.$button-color-text-primary-default;
+  padding: eds.$button-spacing-vertical-sm eds.$button-spacing-horizontal-sm;
+
+  &[type=reset] {
+    background-color: eds.$button-color-background-secondary-default;
+    border: 1px solid eds.$button-color-border-secondary;
+    color: eds.$button-color-text-secondary-default;
+  }
+}
+
+button.icon {
+  padding: eds.$spacing-3;
+  svg {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    color: eds.$button-color-text-primary-default;
+  }
+}
+
+.formFooter {
+  display: flex;
+  flex-direction: row;
+  gap: eds.$spacing-2;
+  justify-content: end;
+}
+
+.visuallyHidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.profilePhoto {
+  border: 1px solid eds.$button-color-border-primary;
+}

@@ -1,8 +1,11 @@
 import UserPage from './pages/UserPage'
+import styles from './App.module.scss'
 
 function App() {
   return (
-    <UserPage />
+      <div className={styles.app}>
+        <UserPage />
+      </div>
   )
 }
 
