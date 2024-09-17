@@ -34,6 +34,8 @@ const UserInfoForm = () => {
         }
     }, [setPhotoSrc])
 
+    const reset = useCallback(() => setPhotoSrc(undefined), [setPhotoSrc])
+
     return (
         <form>
             <h2>User information</h2>
@@ -54,9 +56,11 @@ const UserInfoForm = () => {
                     {photoSrc && (
                         <img className={styles.profilePhoto} width={50} height={50} alt="User photo" src={photoSrc}/>
                     )}
-                    <button type="button" className={styles.icon} onClick={handlePhotoUpload} title="Upload photo">
-                        <UploadIcon/>
-                    </button>
+                    {!photoSrc && (
+                        <button type="button" className={styles.icon} onClick={handlePhotoUpload} title="Upload photo">
+                            <UploadIcon/>
+                        </button>
+                    )}
                 </div>
 
                 <input id="photo" accept="image/jpeg" ref={fileInput} type="file"
@@ -64,7 +68,7 @@ const UserInfoForm = () => {
             </label>
 
             <section className={styles.formFooter}>
-                <button type="reset">
+                <button type="reset" onClick={reset}>
                     Reset
                 </button>
                 <button type="submit">
