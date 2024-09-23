@@ -1,6 +1,6 @@
 import styles from "./UserInfoForm.module.scss"
 import {useCallback, useRef, useState} from "react";
-import UploadIcon from '../../assets/common-file-add.svg';
+import UploadIcon from '../../assets/common-file-add.svg?react';
 
 const UserInfoForm = () => {
     const fileInput = useRef<HTMLInputElement>(null);
