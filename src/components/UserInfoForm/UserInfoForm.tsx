@@ -1,6 +1,6 @@
 import styles from "./UserInfoForm.module.scss"
 import {useCallback, useRef, useState} from "react";
-import UploadIcon from '../../assets/common-file-add.svg?react';
+import {Button} from "../button/Button";
 
 const UserInfoForm = () => {
     const fileInput = useRef<HTMLInputElement>(null);
@@ -57,9 +57,7 @@ const UserInfoForm = () => {
                         <img className={styles.profilePhoto} width={50} height={50} alt="User photo" src={photoSrc}/>
                     )}
                     {!photoSrc && (
-                        <button type="button" className={styles.icon} onClick={handlePhotoUpload} title="Upload photo">
-                            <UploadIcon/>
-                        </button>
+                        <Button type="button" icon="add" typ="icon" variant="primary" className={styles.icon} onClick={handlePhotoUpload} title="Upload photo" />
                     )}
                 </div>
 
@@ -68,12 +66,12 @@ const UserInfoForm = () => {
             </label>
 
             <section className={styles.formFooter}>
-                <button type="reset" onClick={reset}>
+                <Button type="reset" variant="secondary" onClick={reset}>
                     Reset
-                </button>
-                <button type="submit">
+                </Button>
+                <Button type="submit" variant="primary">
                     Submit
-                </button>
+                </Button>
             </section>
         </form>
     )
