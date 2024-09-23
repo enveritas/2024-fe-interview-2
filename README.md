@@ -4,7 +4,7 @@ This is a repository that serves as a base for the Enveritas Front End 2024 Inte
 This is a fake, sample codebase we've created to serve as a base for the take home code review task.
 
 # Instructions
-Your task is to provide feedback on [Pull Request #1](https://github.com/enveritas/2024-fe-interview-2/pull/1) in the form of a code review.
+Your task is to provide feedback on [Pull Request #2](https://github.com/enveritas/2024-fe-interview-2/pull/2) in the form of a code review.
 
 Feel free to pull this repo, install, and run to familiarize yourself with the codebase. You are also encouraged to checkout the Pull Request branch and run that as well.
 
