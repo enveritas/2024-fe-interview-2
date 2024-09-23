@@ -3,11 +3,11 @@ import '@testing-library/jest-dom/vitest';
 import {fireEvent, render, screen} from "@testing-library/react";
 import {Button} from "./Button";
 
-const getButton = async (name?: string) => screen.findByRole('button', name ? { name } : undefined)
+const getButton = async (name?: string) => screen.findByRole('button', name ? {name} : undefined)
 
 describe('Button component', () => {
     it('renders', () => {
-        const {container} = render(<Button />);
+        const {container} = render(<Button/>);
         expect(container).toBeInTheDocument()
     })
 
@@ -29,5 +29,25 @@ describe('Button component', () => {
         fireEvent.click(await getButton('text'));
 
         expect(onClick).toHaveBeenCalled()
+    });
+
+    describe('when an icon is given', () => {
+        it('render the appropriate icon', async () => {
+            render(<Button icon='add'/>);
+
+            const button = await getButton();
+            const svg = button.querySelector('svg');
+
+            expect(svg).toBeInTheDocument();
+        });
+
+        it('the icon rendered has role=presentation', async () => {
+            render(<Button icon='add'/>);
+
+            const button = await getButton();
+            const svg = button.querySelector('svg');
+
+            expect(svg).toHaveRole('presentation');
+        });
     });
 });

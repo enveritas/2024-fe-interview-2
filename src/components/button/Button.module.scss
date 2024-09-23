@@ -51,4 +51,15 @@
       color: eds.$button-color-text-secondary-disabled;
     }
   }
+
+  &.icon {
+    padding: eds.$spacing-3;
+    svg {
+      width: 1rem;
+      height: 1rem;
+      display: inline-block;
+      vertical-align: top;
+      color: eds.$button-color-text-primary-default;
+    }
+  }
 }
