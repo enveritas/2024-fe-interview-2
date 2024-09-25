@@ -1,30 +1,37 @@
 # Enveritas Front End 2024 Interview 2
-This is a repository that serves as a base for the Enveritas Front End 2024 Interview take home task.
 
-This is a fake, sample codebase we've created to serve as a base for the take home code review task.
+## Objective
 
-# Instructions
-Your task is to provide feedback on [Pull Request #2](https://github.com/enveritas/2024-fe-interview-2/pull/2) in the form of a code review.
+Your task is to perform a code review for [this pull request](https://github.com/enveritas/2024-fe-interview-2/pull/2). The pull request aims to refactor various single-use buttons to align with our design system, ensuring consistency and reusability across the application.
 
-Feel free to pull this repo, install, and run to familiarize yourself with the codebase. You are also encouraged to checkout the Pull Request branch and run that as well.
+## Scenario
 
-Review the PR and [submit feedback via Greenhouse](#submission-instructions). Please do not submit feedback or comment on the PR in github.
+We have a codebase with multiple button styles in use. Our design team has been working to unify our visual language to provide a more consistent user experience. This pull request is a step towards that goal. TODO: Design system “docs”
 
-# Submission instructions TODO
-Submit your code review to Greenhouse (TODO LINK) in whichever form most convenient for you
+## Pull Request
+https://github.com/enveritas/2024-fe-interview-2/pull/2
 
-# What to expect after TODO
+## Instructions:
+1. **Clone the repo** and become familiar with the `main` branch and the changes that the PR proposes.
+2. **Review the Pull Request** and prepare detailed code review feedback.
+3. **Submit Your Review**: While our team typically submits code review directly in Github, for interview purposes please submit your code review via Greenhouse. TODO LINK
+   We recognize that Greenhouse is not a typical format for submitting code reviews, so please submit your review in whichever format is easiest for you. Please do not comment directly on the pull request in GitHub.
 
 
-## Commands
+## Setup
 ```zsh
-# install dependencies
-npm i
+npm install
 
-# run the app
+// start the application locally
 npm run dev
 
-# to run tests
+// run tests
 npm run test
 ```
+
+## What to Expect Next
+
+After submitting your review, you will be invited to a live interview where we will discuss your feedback in detail and ask you to make changes to the pull request and codebase in a live pair programming session.
+
+
 
