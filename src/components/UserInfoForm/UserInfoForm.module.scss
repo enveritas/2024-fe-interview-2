@@ -1,6 +1,6 @@
 @use "@enveritas/design-tokens" as eds;
 
-form {
+.form {
   background-color: eds.$color-bg-accent-regular;
   border-radius: eds.$border-radius-2;
   border: 2px solid eds.$color-border-accent-regular;
@@ -16,7 +16,7 @@ form {
   }
 }
 
-button {
+.button {
   width: fit-content;
   display: inline-flex;
   justify-content: center;
@@ -36,8 +36,19 @@ button {
   }
 }
 
-button.icon {
+.iconButton {
   padding: eds.$spacing-3;
+  width: fit-content;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: eds.$button-border-radius;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: eds.$button-color-background-primary-default;
+  border: 1px solid eds.$button-color-border-primary;
+  color: eds.$button-color-text-primary-default;
+
   svg {
     width: 1rem;
     height: 1rem;
