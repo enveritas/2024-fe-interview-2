@@ -57,9 +57,9 @@ const UserInfoForm = () => {
                         <img className={styles.profilePhoto} width={50} height={50} alt="User photo" src={photoSrc}/>
                     )}
                     {!photoSrc && (
-                        <button type="button" className={styles.iconButton} onClick={handlePhotoUpload} title="Upload photo">
+                        <div className={styles.iconButton} onClick={handlePhotoUpload} title="Upload photo">
                             <UploadIcon/>
-                        </button>
+                        </div>
                     )}
                 </div>
 

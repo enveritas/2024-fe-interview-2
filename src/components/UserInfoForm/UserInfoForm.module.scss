@@ -17,44 +17,38 @@
 }
 
 .button {
-  width: fit-content;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: eds.$button-border-radius;
+  border-radius: 8px;
   cursor: pointer;
-  white-space: nowrap;
-  background-color: eds.$button-color-background-primary-default;
-  border: 1px solid eds.$button-color-border-primary;
-  color: eds.$button-color-text-primary-default;
-  padding: eds.$button-spacing-vertical-sm eds.$button-spacing-horizontal-sm;
+  background-color: #236BD7;
+  border: none;
+  color: white;
+  padding: .5em;
 
   &[type=reset] {
-    background-color: eds.$button-color-background-secondary-default;
-    border: 1px solid eds.$button-color-border-secondary;
-    color: eds.$button-color-text-secondary-default;
+    background-color: ghostwhite;
+    border: 1px solid lightgray;
+    color: black;
   }
 }
 
 .iconButton {
-  padding: eds.$spacing-3;
+  padding: 8px;
   width: fit-content;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border-radius: eds.$button-border-radius;
+  border-radius: .25em;
   cursor: pointer;
   white-space: nowrap;
-  background-color: eds.$button-color-background-primary-default;
-  border: 1px solid eds.$button-color-border-primary;
-  color: eds.$button-color-text-primary-default;
+  background-color: royalblue;
+  color: white;
 
   svg {
     width: 1rem;
     height: 1rem;
     display: inline-block;
     vertical-align: top;
-    color: eds.$button-color-text-primary-default;
+    color: white;
   }
 }
 
@@ -76,5 +70,5 @@
 }
 
 .profilePhoto {
-  border: 1px solid eds.$button-color-border-primary;
+  border: 1px solid eds.$color-border-accent-regular;
 }
