@@ -12,11 +12,11 @@ We have a codebase with multiple button styles in use. Our design team has been 
 https://github.com/enveritas/2024-fe-interview-2/pull/2
 
 ## Instructions:
-1. **Clone the repo** and become familiar with the `main` branch and the changes that the PR proposes.
+1. **Clone the repo** and become familiar with the `main` branch and the changes that the PR proposes in the `extract-button-component` branch.
 2. **Review the Pull Request** and prepare detailed code review feedback.
-3. **Submit Your Review**: While our team typically submits code review directly in Github, for interview purposes please submit your code review via Greenhouse. TODO LINK
-   We recognize that Greenhouse is not a typical format for submitting code reviews, so please submit your review in whichever format is easiest for you. Please do not comment directly on the pull request in GitHub.
+3. **Submit Your Review**: While our team typically submits code review directly in Github, for interview purposes please submit your code review via Greenhouse. You will have received a link in your Second Technical Interview email invitation that will direct you to Greenhouse's submission platform.
 
+We recognize that Greenhouse is not a typical format for submitting code reviews, so please submit your review in whichever format is easiest for you. Please do not comment directly on the pull request in GitHub.
 
 ## Setup
 ```zsh
