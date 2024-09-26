@@ -1,5 +1,6 @@
 import UserInfoForm from "../components/UserInfoForm/UserInfoForm.tsx";
 import styles from "./UserPage.module.scss";
+import {Button} from "../components/button/Button";
 
 const UserPage = () => {
     return <div className={styles.pageContainer}>
@@ -8,7 +9,7 @@ const UserPage = () => {
         <UserInfoForm/>
         <hr/>
         <footer>
-            <button type="button" className={styles.delete}>Delete user</button>
+            <Button type="button" variant="danger">Delete user</Button>
         </footer>
     </div>
 }

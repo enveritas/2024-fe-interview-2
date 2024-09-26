@@ -1,6 +1,7 @@
 {
-  "include": ["**/*.tsx",
-    "tests/setup.js",
+  "includes": ["**/*.tsx",
+    "**/*.ts",
+    "tests/setup.js"
   ],
   "files": [],
   "references": [

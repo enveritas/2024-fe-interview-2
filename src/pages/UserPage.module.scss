@@ -3,22 +3,3 @@
 .pageContainer {
   max-width: 400px;
 }
-
-.delete {
-  width: fit-content;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: eds.$button-border-radius;
-  cursor: pointer;
-  white-space: nowrap;
-  background-color: eds.$button-color-background-danger-default;
-  border: 1px solid eds.$button-color-text-danger-default;
-  color: eds.$button-color-text-danger-default;
-  padding: eds.$button-spacing-vertical-lg eds.$button-spacing-horizontal-lg;
-
-  &:hover {
-    background-color: eds.$button-color-background-danger-hover;
-    color: eds.$button-color-text-danger-hover;
-  }
-}

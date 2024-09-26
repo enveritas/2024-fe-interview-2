@@ -1,0 +1,65 @@
+@use "@enveritas/design-tokens" as eds;
+
+.base {
+  width: fit-content;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: eds.$button-border-radius;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: eds.$button-color-background-primary-default;
+  border: 1px solid eds.$button-color-text-primary-default;
+  color: eds.$button-color-text-primary-default;
+  padding: eds.$button-spacing-vertical-lg eds.$button-spacing-horizontal-lg;
+
+  &:hover {
+    background-color: eds.$button-color-background-primary-hover;
+  }
+
+  &:disabled {
+    background-color: eds.$button-color-background-primary-disabled;
+  }
+
+  &.danger {
+    background-color: eds.$button-color-background-danger-default;
+    border: 1px solid eds.$button-color-text-danger-default;
+    color: eds.$button-color-text-danger-default;
+
+    &:hover {
+      background-color: eds.$button-color-background-danger-hover;
+      color: eds.$button-color-text-danger-hover;
+    }
+
+    &:disabled {
+      background-color: eds.$button-color-background-danger-disabled;
+      color: eds.$button-color-text-danger-disabled;
+    }
+  }
+
+  &.secondary {
+    background-color: eds.$button-color-background-secondary-default;
+    border: 1px solid eds.$button-color-border-secondary;
+    color: eds.$button-color-text-secondary-default;
+
+    &:hover {
+      background-color: eds.$button-color-background-secondary-hover;
+    }
+
+    &:disabled {
+      background-color: eds.$button-color-background-secondary-disabled;
+      color: eds.$button-color-text-secondary-disabled;
+    }
+  }
+
+  &.icon {
+    padding: eds.$spacing-3;
+    svg {
+      width: 1rem;
+      height: 1rem;
+      display: inline-block;
+      vertical-align: top;
+      color: eds.$button-color-text-primary-default;
+    }
+  }
+}
