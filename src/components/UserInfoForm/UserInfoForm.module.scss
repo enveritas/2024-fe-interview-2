@@ -16,42 +16,6 @@
   }
 }
 
-.button {
-  border-radius: 8px;
-  cursor: pointer;
-  background-color: #236BD7;
-  border: none;
-  color: white;
-  padding: .5em;
-
-  &[type=reset] {
-    background-color: ghostwhite;
-    border: 1px solid lightgray;
-    color: black;
-  }
-}
-
-.iconButton {
-  padding: 8px;
-  width: fit-content;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: .25em;
-  cursor: pointer;
-  white-space: nowrap;
-  background-color: royalblue;
-  color: white;
-
-  svg {
-    width: 1rem;
-    height: 1rem;
-    display: inline-block;
-    vertical-align: top;
-    color: white;
-  }
-}
-
 .formFooter {
   display: flex;
   flex-direction: row;
