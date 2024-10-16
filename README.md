@@ -6,7 +6,7 @@ Your task is to perform a code review for [this pull request](https://github.com
 
 ## Scenario
 
-We have a codebase with multiple button styles in use. Our design team has been working to unify our visual language to provide a more consistent user experience. This pull request is a step towards that goal. TODO: Design system “docs”
+We have a codebase with multiple button styles in use. Our design team has been working to unify our visual language to provide a more consistent user experience. This pull request is a step towards that goal. Here are our design docs for the button, please use them as you conduct your code review: https://products.enveritas.org/design-system/components/button/
 
 ## Pull Request
 https://github.com/enveritas/2024-fe-interview-2/pull/2
